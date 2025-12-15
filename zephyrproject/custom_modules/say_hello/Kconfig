@@ -1,0 +1,9 @@
+# Create a new option in menuconfig
+config SAY_HELLO
+    bool "Baisc print test to console"
+    default n
+    depends on PRINTK
+    help
+        Adds say_hello() function which prints to consol.
+
+
